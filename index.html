@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A friendly, project-based 45-day path to learning Python from scratch."
+    />
+    <title>Python, One Day at a Time</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Python, One Day at a Time home">
+        <span class="brand-mark" aria-hidden="true">Py</span>
+        <span>python<span class="brand-light">path</span></span>
+      </a>
+      <div class="topbar-note"><span class="status-dot"></span> Your personal learning path</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">A beginner's guide · 45 days · learn by building</p>
+          <h1>Small steps.<br /><span>Real Python projects.</span></h1>
+          <p class="hero-description">
+            Learn one useful idea at a time, practice it, then turn what you know into something
+            you can share on GitHub.
+          </p>
+          <a class="primary-button" href="#course">Start learning <span aria-hidden="true">↓</span></a>
+          <p class="time-note">About 30–60 minutes a day. No experience needed.</p>
+        </div>
+        <div class="hero-art" aria-label="A preview of your 45-day learning progress">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="code-card">
+            <div class="code-card-top"><span></span><span></span><span></span><b>day_01.py</b></div>
+            <pre><code><i># your first line</i>
+name = <em>input</em>(<u>"Your name: "</u>)
+<em>print</em>(<u>f"Hello, {name}!"</u>)</code></pre>
+            <div class="code-success"><span>✓</span> first program, done</div>
+          </div>
+          <div class="floating-note note-top"><span>✦</span> 5 mini projects</div>
+          <div class="floating-note note-bottom"><span>↗</span> your GitHub repo</div>
+        </div>
+      </section>
+
+      <section class="overview" aria-label="Course overview">
+        <div><strong>45</strong><span>short daily lessons</span></div>
+        <div><strong>5</strong><span>build-as-you-learn projects</span></div>
+        <div><strong>1</strong><span>GitHub-ready final project</span></div>
+        <div class="progress-overview">
+          <div class="progress-label"><span>Your progress</span><strong id="progress-count">0 / 45 days</strong></div>
+          <div class="progress-track"><span id="progress-bar"></span></div>
+        </div>
+      </section>
+
+      <section class="course-layout" id="course">
+        <aside class="roadmap" aria-label="Course roadmap">
+          <div class="roadmap-heading">
+            <div><p class="eyebrow">THE ROADMAP</p><h2>45 days to Python confidence</h2></div>
+            <span class="roadmap-icon" aria-hidden="true">⌁</span>
+          </div>
+          <div id="week-list" class="week-list"></div>
+          <div class="roadmap-tip">
+            <span aria-hidden="true">☼</span>
+            <p><strong>Learning tip</strong><br />Try the exercise before looking at an example. Getting stuck is part of learning.</p>
+          </div>
+        </aside>
+
+        <section class="lesson-panel" aria-live="polite">
+          <div id="lesson-content"></div>
+        </section>
+      </section>
+
+      <section class="publish-callout">
+        <div class="publish-icon" aria-hidden="true">↗</div>
+        <div>
+          <p class="eyebrow">YOUR WORK, OUT IN THE WORLD</p>
+          <h2>GitHub is your project showcase.</h2>
+          <p>You'll learn to save your code, write a clear README, and publish each project to your GitHub profile. Python apps need a Python host to run online; GitHub stores and showcases your code.</p>
+        </div>
+        <a href="#course" class="text-link" data-day-link="45">See the finish line <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">Py</span><span>python<span class="brand-light">path</span></span></a>
+      <span>Made for curious beginners. One day at a time.</span>
+    </footer>
+
+    <div class="modal-backdrop" id="project-modal" hidden>
+      <section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" id="modal-close" type="button" aria-label="Close">×</button>
+        <span class="modal-sparkle" aria-hidden="true">✦</span>
+        <p class="eyebrow">WEEKLY CHECKPOINT UNLOCKED</p>
+        <h2 id="modal-title">Ready to build your first project?</h2>
+        <p id="modal-description"></p>
+        <div class="modal-actions">
+          <button class="primary-button" id="modal-start" type="button">Let's build it <span aria-hidden="true">→</span></button>
+          <button class="secondary-button" id="modal-later" type="button">I'll come back to this</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
